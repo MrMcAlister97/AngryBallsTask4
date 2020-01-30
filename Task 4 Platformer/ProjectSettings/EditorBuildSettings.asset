@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 716a931e2197ab84a83b231887983d72
+  - enabled: 1
+    path: Assets/Scenes/MapSellect.unity
+    guid: 8f29ee2dbf3fa4743bbbc00ca2ce44d0
+  - enabled: 1
+    path: Assets/Scenes/Map_City.unity
+    guid: df38462c2595f7849b30952eb620d85d
+  - enabled: 1
+    path: Assets/Scenes/Map_Polar.unity
+    guid: 943e35039b44aef428895b352012e3e4
+  - enabled: 1
+    path: Assets/Scenes/Map_Desert.unity
+    guid: 1d6b010057c940842bc64db40d00f4ac
+  m_configObjects: {}
