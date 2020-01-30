@@ -27,6 +27,7 @@ public class Player_Controller : MonoBehaviour
     public Transform playerPrefab;
     public Transform spawnPoint;
 
+
     public void RespawnPlayer()
     {
         transform.position = spawnPoint.position;
