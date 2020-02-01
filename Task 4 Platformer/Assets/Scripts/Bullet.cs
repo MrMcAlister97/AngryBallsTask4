@@ -15,6 +15,16 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        //use .ganeObject.tag because just using .tag doesn't work for OnCollisionEnter2D
+        if (collision.gameObject.tag == "PlayerOne")
+        {
+            //Debug.Log("Hit Player One");
+            FindObjectOfType<Game_Manager>().HurtPlayerOne();
+        }
+        else if (collision.gameObject.tag == "PlayerTwo")
+        {
+            FindObjectOfType<Game_Manager>().HurtPlayerTwo();
+        }
         Destroy(this.gameObject);
     }
 
