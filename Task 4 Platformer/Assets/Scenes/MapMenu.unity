@@ -195,8 +195,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 70
+  m_fontSizeBase: 70
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -518,7 +518,7 @@ GameObject:
   - component: {fileID: 1421810869}
   - component: {fileID: 1421810868}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: BTNPolar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -582,7 +582,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1421810869}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1915300456}
+        m_MethodName: LoadPolar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1421810869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -810,7 +821,7 @@ GameObject:
   - component: {fileID: 1459898757}
   - component: {fileID: 1459898756}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: BTNDesert
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -874,7 +885,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1459898757}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1915300456}
+        m_MethodName: LoadDesert
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1459898757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -923,7 +945,7 @@ GameObject:
   - component: {fileID: 1637123631}
   - component: {fileID: 1637123630}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: BTNBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -946,8 +968,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -305.95}
-  m_SizeDelta: {x: 209.8, y: 88.1}
+  m_AnchoredPosition: {x: 0, y: -288.1}
+  m_SizeDelta: {x: 294.7, y: 123.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1637123630
 MonoBehaviour:
@@ -969,8 +991,8 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0.827451}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -988,7 +1010,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1637123631}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1915300456}
+        m_MethodName: GoBack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1637123631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1033,6 +1066,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915300455}
+  - component: {fileID: 1915300456}
   m_Layer: 5
   m_Name: Maps
   m_TagString: Untagged
@@ -1063,6 +1097,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1400, y: 700}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1915300456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915300454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6312d3e0d62e63546bab0f606c213767, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1939306451
 GameObject:
   m_ObjectHideFlags: 0
@@ -1076,7 +1122,7 @@ GameObject:
   - component: {fileID: 1939306454}
   - component: {fileID: 1939306453}
   m_Layer: 5
-  m_Name: Button
+  m_Name: BTNCity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1140,7 +1186,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1939306454}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1915300456}
+        m_MethodName: LoadCity
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1939306454
 MonoBehaviour:
   m_ObjectHideFlags: 0

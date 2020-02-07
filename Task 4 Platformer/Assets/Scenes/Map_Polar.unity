@@ -2705,8 +2705,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   extraJumpValue: 1
-  jumpButton: Jump_P1
-  horizontalCtrl: Horizontal_P1
+  jumpButton: P1-Jump
+  horizontalCtrl: P1-Horizontal
   playerPrefab: {fileID: 7466025252844313364, guid: 2b1092a5210630a48878744aabeebf4c,
     type: 3}
   spawnPoint: {fileID: 93963215}
@@ -2725,7 +2725,7 @@ MonoBehaviour:
   firePoint: {fileID: 1147686256}
   bulletPrefab: {fileID: 1690342025173340304, guid: 7391174441ea1774eb63faf6c9178029,
     type: 3}
-  fireButton: Fire1_P1
+  fireButton: P1-Fire1
 --- !u!50 &1143615283
 Rigidbody2D:
   serializedVersion: 4
@@ -4662,8 +4662,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   extraJumpValue: 1
-  jumpButton: Jump_P2
-  horizontalCtrl: Horizontal_P2
+  jumpButton: P2-Jump
+  horizontalCtrl: P2-Horizontal
   playerPrefab: {fileID: 5278195495149639952, guid: ac4c1f85078a0f74781a8735341a3a24,
     type: 3}
   spawnPoint: {fileID: 709097285}
@@ -4682,7 +4682,7 @@ MonoBehaviour:
   firePoint: {fileID: 391612549}
   bulletPrefab: {fileID: 1690342025173340304, guid: 7391174441ea1774eb63faf6c9178029,
     type: 3}
-  fireButton: Fire1_P2
+  fireButton: P2-Fire1
 --- !u!50 &2089593074
 Rigidbody2D:
   serializedVersion: 4

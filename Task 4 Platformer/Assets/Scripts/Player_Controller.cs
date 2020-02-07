@@ -21,8 +21,8 @@ public class Player_Controller : MonoBehaviour
     private int _extraJumps;
     public int extraJumpValue;
 
-    public string jumpButton = "Jump_P1";
-    public string horizontalCtrl = "Horizontal_P1";
+    public string jumpButton = "P1-Jump";
+    public string horizontalCtrl = "P1-Horizontal";
 
     public Transform playerPrefab;
     public Transform spawnPoint;

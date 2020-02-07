@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Game_Manager : MonoBehaviour
 {
@@ -32,12 +33,19 @@ public class Game_Manager : MonoBehaviour
         {
             playerOne.SetActive(false);
             WinnerPlayerTwo.SetActive(true);
+            Invoke("WinnerWinnerChickenDinner", 2);
         }
         else if (playerTwoHealth <= 0)
         {
             playerTwo.SetActive(false);
             WinnerPlayerOne.SetActive(true);
+            Invoke("WinnerWinnerChickenDinner", 2);
         }
+    }
+
+    public void WinnerWinnerChickenDinner()
+    {
+        SceneManager.LoadScene(0);
     }
 
     public void HurtPlayerOne()

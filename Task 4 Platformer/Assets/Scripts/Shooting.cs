@@ -8,7 +8,7 @@ public class Shooting : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
 
-    public string fireButton = "Fire1_P1";
+    public string fireButton = "P1-Fire1";
 
     // Update is called once per frame
     void Update()
